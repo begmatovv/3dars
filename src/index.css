@@ -1,0 +1,91 @@
+* {
+  user-select: none;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.completed {
+  opacity: 0.5;
+  background-color: rgb(40, 247, 40);
+}
+li {
+  list-style: none;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid blue;
+}
+.delete {
+  background-color: red;
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+.edit{
+    background-color: rgb(233, 191, 26);
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+.edited{
+  background-color: rgb(21, 244, 17);
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+li h3 {
+padding: 5px;
+  text-align: left;
+  background-color: aquamarine;
+  width: 250px;
+  overflow-wrap: break-word;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inputAdd {
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-right: rgb(55, 0, 255);
+  border-bottom-left-radius: 10px;
+}
+.submitBtn {
+  color: aliceblue;
+  background-color:rgb(55, 0, 255);
+  padding: 5px;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card-body {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.hidden{
+display: none;}
