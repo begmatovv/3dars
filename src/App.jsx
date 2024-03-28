@@ -17,6 +17,7 @@ function App() {
 
     const music = new Audio("./add-music.mp3");
     music.play();
+    setTitle("")
   }
   function handleDelete(id) {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
@@ -73,6 +74,7 @@ e.preventDefault();
           type="text"
           onChange={(e) => setTitle(e.target.value)}
           required
+          value={title}
         />
         <button className="submitBtn">Add</button>
       </form>
